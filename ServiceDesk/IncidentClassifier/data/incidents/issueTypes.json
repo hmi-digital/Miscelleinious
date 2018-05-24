@@ -1,0 +1,24 @@
+{
+    "classes": [{
+            "name": "loginIssue",
+            "utterances": ["I have login Issue",
+		"Not able to get through",
+		"wrong username and or password",
+		"failed to login into system"]
+	},
+        {
+            "name": "LEQMIssue",
+            "utterances": ["Not able to login into LEQM",
+		"Issue with LEQM System",
+		"problem with LEQM",
+		"Need help with LEQM"]
+	},
+        {
+            "name": "SAPIssue",
+            "utterances": ["Not able to login into SAP",
+		"Issue with SAP",
+		"problem with SAP",
+		"Need help with SAP"]
+	}
+	]
+}
