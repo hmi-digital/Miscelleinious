@@ -32,15 +32,15 @@ Usage
 ```
 $ python classifyServer.py
     WARNING - Training incident model...
-	\# Number of utterances for training: 12
-	\# Number of classes used in training: 3
+	# Number of utterances for training: 12
+	# Number of classes used in training: 3
  * Running on http://localhost:8001/ (Press CTRL+C to quit) 
 ```
-+ Above command will train ML model and it will listen at port 8081 for user query
++ Above command will train ML model and it will listen at port 8001 for user query
 
 Configuration
 -------------
-+ Follow below mentioned steps to confogure the Incident classifier
++ Follow below mentioned steps to configure the Incident classifier
 + <h4>Training the model</h4>
 + You can train the model by providing all the variations of incidents in incidentTypes.json file located at (IncidentClassifier/data/incidents folder)
 + Provide the incident ticket class name in "name" JSON object and possible incident utterances in "utternces" JSON object
@@ -52,7 +52,7 @@ Configuration
 + The port of flask webserver can be set by changing the SERVER_PORT parameter in file (IncidentClassifier/classifyServer.py file , line no 9)
 + Once the server is started , you can use REST API with following parameters
 	+ Method - GET
-	+ URL - http://localhost:<port>/classify?userUtterance=LEQM Issue
+	+ URL - ```http://localhost:<port>/classify?userUtterance=LEQM Issue```
 	+ Response - ```{"class": "LEQMIssue","score": "0.71"}```
 
 Contact
