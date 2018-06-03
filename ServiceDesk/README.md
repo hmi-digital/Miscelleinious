@@ -19,7 +19,7 @@ import nltk
 
 Usage
 -----
-+ Clone or download the [Miscellaneous repo](https://github.com/hmi-digital/Miscelleinious) and copy "IncidentClassifier" folder from "ServiceDesk" folder to D:/HMI folder (or your prefered location)
++ Clone or download the [Miscellaneous repo](https://github.com/hmi-digital/Miscelleinious) and copy "IncidentClassifier" folder from "ServiceDesk" folder to D:/HMI folder (or your preferred location)
 + Ensure that you have following folder structure
 + IncidentClassifier
 	+ config
