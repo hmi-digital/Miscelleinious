@@ -21,7 +21,7 @@ Usage
 -----
 + Clone or download the [Miscellaneous repo](https://github.com/hmi-digital/Miscelleinious) and copy "FAQFinder_\<language\>" folder from "FAQFinder" folder to D:/HMI folder (or your preferred location)
 + Ensure that you have following folder structure
-+ FAQFInder_<language>
++ FAQFInder_\<language\>
 	+ config
 	+ data
 	+ model
