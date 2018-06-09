@@ -4,6 +4,10 @@ import configparser
 import re
 import codecs
 import _pickle as cPickle
+import datetime
+import glob
+import time
+from flask import jsonify
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from sklearn.metrics.pairwise import linear_kernel
@@ -11,6 +15,14 @@ scriptDir=os.path.dirname(__file__)
 config=configparser.RawConfigParser()
 config.read(os.path.join(scriptDir,'..','config','classifier.properties'))
 thresholdScore=config.get('Classifier','Classifier.thresholdScore')
+logFile=os.path.join(scriptDir,'..','log',str(datetime.datetime.today().strftime('%b'))+'_training.txt')
+synonymFile=os.path.join(scriptDir,'..','data','dictionary','synonyms_en.txt')
+with codecs.open(synonymFile,'r','utf-8')as rawSynonymsFileobj:
+ rawSynonyms=rawSynonymsFileobj.read()
+ rawSynonyms=rawSynonyms.split('\n')
+synonymsList=[]
+for i in rawSynonyms:
+ synonymsList.append(i.split(','))
 def initialize():
  global picklePath
  global classes
@@ -89,18 +101,13 @@ def processUtterance(utter):
     scoreList[fClasses]=fScore
     idList[fClasses]=fID
  orderedClasses=sorted(scoreList,key=scoreList.get,reverse=True)
+ print('\tResult- class: '+orderedClasses[0]+' score:'+"{:.2f}".format(scoreList[orderedClasses[0]]))
  if(float(scoreList[orderedClasses[0]])>=float(thresholdScore)):
   response={'class':orderedClasses[0],'score':"{:.2f}".format(scoreList[orderedClasses[0]])}
  else:
-  response={'class':'NA','score':"{:.2f}".format(0.0000)}
+  response={'class':'NA','score':"{:.2f}".format(scoreList[orderedClasses[0]])}
+  logTraining(''.join(query))
  return response
-synonymFile=os.path.join(scriptDir,'..','data','dictionary','synonyms_en.txt')
-with codecs.open(synonymFile,'r','utf-8')as rawSynonymsFileobj:
- rawSynonyms=rawSynonymsFileobj.read()
- rawSynonyms=rawSynonyms.split('\n')
-synonymsList=[]
-for i in rawSynonyms:
- synonymsList.append(i.split(','))
 def genUtterances(utter):
  matched={}
  utteranceSet=set(utter.split())
@@ -112,4 +119,23 @@ def genUtterances(utter):
  genSentences(utter,matched,combinations)
  combinations.sort()
  return combinations
+def logTraining(logDetails):
+ if os.path.isfile(logFile):
+  dFile=time.strftime("%m/%d/%Y",time.localtime(os.path.getmtime(logFile)))
+  dCurrent=datetime.datetime.today().strftime('%m/%d/%Y')
+  dateFile=datetime.datetime.strptime(dFile,'%m/%d/%Y')
+  dateCurrent=datetime.datetime.strptime(dCurrent,'%m/%d/%Y')
+  diff=(dateCurrent-dateFile).days
+  if(diff>31):
+   f1=codecs.open(logFile,'w','utf-8')
+   f1.write(str(datetime.datetime.now(datetime.timezone.utc).astimezone())+" "+logDetails+"\n")
+   f1.close()
+  else:
+   f1=codecs.open(logFile,'a','utf-8')
+   f1.write(str(datetime.datetime.now(datetime.timezone.utc).astimezone())+" "+logDetails+"\n")
+   f1.close()
+ else:
+  f1=codecs.open(logFile,'w','utf-8')
+  f1.write(str(datetime.datetime.now(datetime.timezone.utc).astimezone())+" "+logDetails+"\n")
+  f1.close()
 # Created by pyminifier (https://github.com/liftoff/pyminifier)
