@@ -50,7 +50,7 @@ Configuration
 + The server will return the class name only if confidence level is above the threshold score
 3. <h4>Failure Logs</h4>
 + The logs will be avialable at (IncidentClassifier/log) where all the incidents which it was not able to classify are logged.
-+ Note that log stores the utterance after the stop word removals.
++ Note that log stores the original utterance as recieved by user as well as after the stop word removals.
 4. <h4> Setting WebServer port</h4>
 + The port of flask webserver can be set by changing the SERVER_PORT parameter in file (IncidentClassifier/classifyServer.py file , line no 9)
 + Once the server is started , you can use REST API with following parameters

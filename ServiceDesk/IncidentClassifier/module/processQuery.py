@@ -82,8 +82,8 @@ def genSentences(utter,matchedDict,combinations):
 def processUtterance(utter):
  scoreList={}
  idList={}
- for query in utter:
-  query=stopwordRemover(query.lower())
+ for inputQuery in utter:      
+  query=stopwordRemover(inputQuery.lower())
   query=[query]
   test=tfidfVec.transform(query).toarray()
   LSATest=svd.transform(test)
@@ -106,7 +106,7 @@ def processUtterance(utter):
   response={'class':orderedClasses[0],'score':"{:.2f}".format(scoreList[orderedClasses[0]])}
  else:
   response={'class':'NA','score':"{:.2f}".format(scoreList[orderedClasses[0]])}
-  logTraining(''.join(query))
+  logTraining("Original: "+inputQuery+" Processed:"+''.join(query))
  return response
 def genUtterances(utter):
  matched={}
