@@ -1,0 +1,24 @@
+[
+  {
+    "name": "getTripInformation",
+    "utterances": [
+        "I want to book a ticket"
+    ]
+  },
+  {
+    "name": "getWeatherInformation",
+    "utterances": ["How is weather"
+    ]
+  },
+  {
+    "name": "getWikipediaCityInfo",
+    "utterances": [
+        "Can you tell me more information"
+    ]
+  },
+  {
+    "name": "cancelTask",
+    "utterances": ["cancel this task"
+    ]
+  }
+]
