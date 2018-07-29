@@ -55,11 +55,11 @@ Configuration
 + The logs will be avialable at (IntentClassifier/log) where all the utterances which were not able to classify are logged.
 + Note that log stores the original utterance as recieved by user ,probability score and closest class that it could match.
 4. <h4> Setting WebServer port</h4>
-+ The port of flask webserver can be set by changing the SERVER_PORT parameter in file (IncidentClassifier/classifyServer.py file , line no 9)
++ The port of flask webserver can be set by changing the SERVER_PORT parameter in file (IntentClassifier/classifyServer.py file , line no 8)
 + Once the server is started , you can use REST API with following parameters
 	+ Method - GET
-	+ URL - ```http://localhost:<port>/classify?userUtterance=LEQM Issue```
-	+ Response - ```{"class": "LEQMIssue","score": "0.71"}```
+	+ URL - ```http://localhost:<port>/classify?userUtterance=How is% weather```
+	+ Response - ```{"intent":"getWeatherInformation","score":"0.81","text":"How is weather"}```
 
 Contact
 -------
