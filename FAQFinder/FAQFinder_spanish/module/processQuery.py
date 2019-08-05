@@ -93,7 +93,7 @@ def processUtterance(utter):
   cosineSimilarities=linear_kernel(LSATest,trainLSA).flatten()
   related_docs_indices=cosineSimilarities.argsort()[:-4:-1]
   for fID in related_docs_indices:
-   fScore=cosineSimilarities[fID]
+   fScore=round(cosineSimilarities[fID],3)
    if(fID in result):
     result[fID]=max(fScore,result[fID])
    else:
