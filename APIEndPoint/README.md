@@ -1,5 +1,5 @@
 ## API End Point to CSV Database
-This utility will provide API based access to CSV data (located in \data folder). You can filter the specific data by changing the query.
+This utility will provide API based access to different CSV data (located in \data folder). You can filter the specific data by changing your query.
 
 Prerequisite
 -----------
@@ -30,10 +30,14 @@ $ python app.py
 Configuration
 -------------
 1. <h4> Setting WebServer port</h4>
-+ The port of flask webserver can be set by changing the SERVER_PORT parameter in file (APIEndPoint/app.py file , line no 9)
++ The port of flask webserver can be set by changing the SERVER_PORT parameter in file (APIEndPoint/app.py file , line no 11)
 + Once the server is started , you can use REST API with following parameters
 	+ Method - GET
-	+ URL - ```http://localhost:<port>/params/Name=='John'&Credit_Limit>=0```
+	+ URL - ```http://localhost:<port>/getData```
+	+ URL Parameter
+		+ ```source = customer```
+		+ ```query = Name=='John'&Credit_Limit>4000```
+	+ Try the same URL in browser e.g. ```http://127.0.0.1:8001/getData?source=customer&query=Name==%27John%27%26Credit_Limit%3E4000```
 	+ Response - ```{"Id":{"0":100001,"1":100001},"Name":{"0":"John","1":"John"},"Account_Number":{"0":1608900125,"1":1608900125},"Credit_Card_Number":{"0":4544150000004734,"1":4544150000003765},"Credit_Limit":{"0":0,"1":5000},"Customer_Profile":{"0":"Low_Risk","1":"Low_Risk"}}```
 + You can get required data by changing your query in url parameter.
 
