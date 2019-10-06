@@ -12,12 +12,14 @@ This system was implemented and tested under Windows, Linux and Mac OS X with th
 
 Usage
 -----
-+ Clone or download the [Miscellaneous repo](https://github.com/hmi-digital/Miscelleinious) and copy "APIEndPoint" folder to D:/HMI folder (or your preferred location)
++ Clone or download the [Miscellaneous repo](https://github.com/hmi-digital/Miscelleinious) and copy "APIEndPoint" folder to D:/HMI folder (or your preferred location).
 + Ensure that you have following folder structure
 + APIEndPoint
 	+ data
+	+ module
 	+ app.py
-+ Open command prompt, go to D:\HMI\APIEndPoint folder and execute following command to run flask web server
++ Open command prompt, go to D:\HMI\APIEndPoint folder and execute following command to run flask web server.
++ It will poll the data folder every 10 sec. So feel free to add,change,modify data to this folder.
 ```
 $ python app.py
 .
@@ -36,9 +38,9 @@ Configuration
 	+ URL - ```http://localhost:<port>/getData```
 	+ URL Parameter
 		+ ```source = customer```
-		+ ```query = Name=='John'&Credit_Limit>4000```
+		+ ```query = Name=='Allen'&Credit_Limit>4000```
 	+ Try the same URL in browser e.g. ```http://127.0.0.1:8001/getData?source=customer&query=Name==%27John%27%26Credit_Limit%3E4000```
-	+ Response - ```{"Id":{"0":100001,"1":100001},"Name":{"0":"John","1":"John"},"Account_Number":{"0":1608900125,"1":1608900125},"Credit_Card_Number":{"0":4544150000004734,"1":4544150000003765},"Credit_Limit":{"0":0,"1":5000},"Customer_Profile":{"0":"Low_Risk","1":"Low_Risk"}}```
+	+ Response - ```{"2":{"Id":100002,"Name":"Allen","Account_Number":1608900127,"Credit_Card_Number":4544150000009750,"Credit_Limit":10000,"Credit_Balance":9500,"Customer_Profile":"High_Risk"},"3":{"Id":100002,"Name":"Allen","Account_Number":1608900128,"Credit_Card_Number":4544150000003971,"Credit_Limit":15000,"Credit_Balance":15000,"Customer_Profile":"High_Risk"}}```
 + You can get required data by changing your query in url parameter.
 
 Contact
