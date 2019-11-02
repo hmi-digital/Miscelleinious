@@ -1,4 +1,4 @@
-## Tool to auto cirrect your utterance to correct spelling
+## Tool to auto correct your utterance to correct spelling
 This utility will provide REST based API for auto correcting your utterance using spellchecker module.
 
 Prerequisite
