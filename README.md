@@ -16,3 +16,7 @@ This is CNN model to classify the intent based on end user utterance.
 [APIEndpoint](/APIEndPoint)
 -----------
 This is API Endpoint to CSV database.
+
+[SpellChecker](/SpellChecker)
+-----------
+This is API for autocorrecting the utterance/sentence.

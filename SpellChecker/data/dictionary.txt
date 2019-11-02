@@ -1,0 +1,392 @@
+﻿xCmd
+schtasks
+route
+pwdump
+pngdowner
+netstat
+netsh
+nbtstat
+meek
+ipconfig
+ifconfig
+httpclient
+hcdLoader
+gsecdump
+gh0st
+dsquery
+cmd
+certutil
+at
+Zeroaccess
+ZLib
+XTunnel
+XAgentOSX
+Wiper
+Winnti
+Wingbird
+Windows Credential Editor
+WinMM
+WINDSHIELD
+WEBC2
+Volgmer
+Uroburos
+Unknown Logger
+USBStealer
+UACMe
+Truvasys
+Trojan.Mebromi
+Trojan.Karagany
+Tor
+TinyZBot
+Tasklist
+Taidoor
+TINYTYPHON
+TEXTMATE
+TDTESS
+T9000
+Systeminfo
+Sys10
+Sykipot
+StreamEx
+Starloader
+SslMM
+Skeleton Key
+Shamoon
+SeaDuke
+Sakula
+SPACESHIP
+SOUNDBITE
+SNUGRIDE
+SHOTPUT
+SHIPSHAPE
+SEASHARPEE
+S-Type
+Rover
+Responder
+Remsec
+RemoteCMD
+Regin
+Reg
+RedLeaves
+Reaver
+RawPOS
+RTM
+ROCKBOOT
+RIPTIDE
+RARSTONE
+Pteranodon
+Psylo
+PsExec
+Prikormka
+PowerDuke
+Power Loader
+PoisonIvy
+PlugX
+Pisloader
+Ping
+PinchDuke
+Pass-The-Hash Toolkit
+POWRUNER
+POWERSOURCE
+POSHSPY
+PHOREAL
+P2P ZeuS
+OwaAuth
+OnionDuke
+OSInfo
+OLDBAIT
+Nidiran
+NetTraveler
+Net Crawler
+Net
+NETEAGLE
+MoonWind
+MobileOrder
+Mivast
+Misdat
+Mis-Type
+MiniDuke
+Miner-C
+Mimikatz
+MimiPenguin
+Matroyshka
+Lurid
+Lslsass
+LOWBALL
+Komplex
+Kasidet
+KOMPROGO
+Janicab
+JHUHUGIT
+Ixeshe
+ISMInjector
+Hikit
+Hi-Zor
+Helminth
+Hacking Team UEFI Rootkit
+HTTPBrowser
+HTRAN
+HIDEDRV
+HDoor
+HAMMERTOSS
+HALFBAKED
+H1N1
+GeminiDuke
+Gazer
+GLOOXMAIL
+Flame
+FinFisher
+Fgdump
+Felismus
+FakeM
+FTP
+FLIPSIDE
+FLASHFLOOD
+FALLCHILL
+EvilGrab
+Epic
+Emissary
+Elise
+ELMER
+Dyre
+DustySky
+Duqu
+Downdelph
+DownPaper
+Derusbi
+Daserf
+Crimson
+CozyCar
+CosmicDuke
+ComRAT
+Cobalt Strike
+CloudDuke
+China Chopper
+Cherry Picker
+ChChes
+Carbanak
+CallMe
+Cachedump
+CORESHELL
+CHOPSTICK
+CALENDAR
+BlackEnergy
+Backdoor.Oldrea
+BUBBLEWRAP
+BS2005
+BOOTRASH
+BLACKCOFFEE
+BISCUIT
+BBSRAT
+BADNEWS
+BACKSPACE
+AutoIt backdoor
+Arp
+Agent.btz
+ASPXSpy
+ADVSTORESHELL
+4H RAT
+3PARA RAT
+Persistence
+ExecutionLateral Movement
+Execution
+Lateral Movement
+PersistencePrivilege Escalation
+Command and Control
+Defense EvasionPersistencePrivilege Escalation
+Credential Access
+Defense EvasionExecution
+ExecutionPersistence
+Defense Evasion
+Discovery
+Privilege Escalation
+Exfiltration
+ExecutionPersistencePrivilege Escalation
+Lateral MovementCredential Access
+Command and ControlLateral Movement
+Defense EvasionPersistence
+Defense EvasionPrivilege Escalation
+Lateral MovementPersistence
+PersistenceExecution
+Defense EvasionExecutionPersistence
+CollectionCredential Access
+Credential AccessPersistencePrivilege Escalation
+Credential AccessDefense EvasionLateral MovementPrivilege Escalation
+CollectionPersistence
+Winlogon Helper DLL
+Windows Remote Management
+Windows Management Instrumentation Event Subscription
+Windows Management Instrumentation
+Windows Admin Shares
+Web Shell
+Web Service
+Valid Accounts
+Uncommonly Used Port
+Two-Factor Authentication Interception
+Trusted Developer Utilities
+Trap
+Timestomp
+Third-party Software
+Taint Shared Content
+System Time Discovery
+System Service Discovery
+System Owner/User Discovery
+System Network Connections Discovery
+System Network Configuration Discovery
+System Information Discovery
+System Firmware
+Sudo
+Startup Items
+Standard Non-Application Layer Protocol
+Standard Cryptographic Protocol
+Standard Application Layer Protocol
+Space after Filename
+Source
+Software Packing
+Shortcut Modification
+Shared Webroot
+Setuid and Setgid
+Service Registry Permissions Weakness
+Service Execution
+Securityd Memory
+Security Support Provider
+Security Software Discovery
+Scripting
+Screensaver
+Scheduled Transfer
+Scheduled Task
+SSH Hijacking
+SID-History Injection
+Rundll32
+Rootkit
+Replication Through Removable Media
+Remote System Discovery
+Remote Services
+Remote File Copy
+Remote Desktop Protocol
+Regsvr32
+Regsvcs/Regasm
+Registry Run Keys / Start Folder
+Redundant Access
+Re-opened Applications
+Rc.common
+Query Registry
+Process Injection
+Process Hollowing
+Process Doppelg\x84nging
+Process Discovery
+Private Keys
+PowerShell
+Port Monitors
+Plist Modification
+Permission Groups Discovery
+Peripheral Device Discovery
+Path Interception
+Password Filter DLL
+Pass the Ticket
+Pass the Hash
+Office Application Startup
+Obfuscated Files or Information
+New Service
+Network Sniffing
+Network Share Discovery
+Network Share Connection Removal
+Network Service Scanning
+Netsh Helper DLL
+NTFS Extended Attributes
+Multilayer Encryption
+Multiband Communication
+Multi-hop Proxy
+Multi-Stage Channels
+Mshta
+Modify Registry
+Modify Existing Service
+Masquerading
+Logon Scripts
+Login Item
+Local Job Scheduling
+Launchctl
+Launch Daemon
+Launch Agent
+LSASS Driver
+LLMNR/NBT-NS Poisoning
+LC_MAIN Hijacking
+LC_LOAD_DYLIB Addition
+Keychain
+InstallUtil
+Install Root Certificate
+Input Prompt
+Input Capture
+Indicator Removal on Host
+Indicator Removal from Tools
+Indicator Blocking
+Image File Execution Options Injection
+Hypervisor
+Hooking
+Hidden Window
+Hidden Users
+Hidden Files and Directories
+HISTCONTROL
+Graphical User Interface
+Gatekeeper Bypass
+Forced Authentication
+File and Directory Discovery
+File System Permissions Weakness
+File System Logical Offsets
+File Deletion
+Fallback Channels
+Extra Window Memory Injection
+External Remote Services
+Exploitation of Vulnerability
+Exfiltration Over Physical Medium
+Exfiltration Over Other Network Medium
+Exfiltration Over Command and Control Channel
+Exfiltration Over Alternative Protocol
+Execution through Module Load
+Execution through API
+Dynamic Data Exchange
+Dylib Hijacking
+Domain Fronting
+Distributed Component Object Model
+Disabling Security Tools
+Deobfuscate/Decode Files or Information
+Data Transfer Size Limits
+Data Obfuscation
+Data Encrypted
+Data Encoding
+Data Compressed
+DLL Side-Loading
+DLL Search Order Hijacking
+Custom Cryptographic Protocol
+Custom Command and Control Protocol
+Credentials in Files
+Credential Dumping
+Create Account
+Connection Proxy
+Component Object Model Hijacking
+Component Firmware
+Communication Through Removable Media
+Commonly Used Port
+Command-Line Interface
+Code Signing
+Clear Command History
+Change Default File Association
+Bypass User Account Control
+Brute Force
+Browser Extensions
+Bootkit
+Binary Padding
+Bash History
+Automated Exfiltration
+Authentication Package
+Application Window Discovery
+Application Shimming
+Application Deployment Software
+AppleScript
+AppInit DLLs
+AppCert DLLs
+Account Manipulation
+Account Discovery
+Accessibility Features
+Access Token Manipulation
+.bash_profile and .bashrc
