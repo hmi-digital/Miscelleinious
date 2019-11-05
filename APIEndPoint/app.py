@@ -32,5 +32,12 @@ def getData():
 def not_found(error):
  	return make_response(jsonify({'Error':'No data found'}),404)
 
+@app.after_request
+def after_request(response):
+  response.headers.add('Access-Control-Allow-Origin', '*')
+  response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+  response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+  return response
+
 if __name__ == "__main__":
     app.run(debug=False,host=SERVER_HOST,port=SERVER_PORT,threaded=True)
