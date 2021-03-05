@@ -42,6 +42,3 @@ Configuration
 	+ Response - ```{"Utterance":"log in to computer"}```
 + You can get required data by changing your utterance in url parameter.
 
-Contact
--------
-helpdesk.hmilab@gmail.com

@@ -58,6 +58,3 @@ Configuration
 	+ URL - ```http://localhost:<port>/classify?userUtterance=LEQM Issue```
 	+ Response - ```{"class": "LEQMIssue","score": "0.71"}```
 
-Contact
--------
-helpdesk.hmilab@gmail.com

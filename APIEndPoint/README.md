@@ -42,7 +42,3 @@ Configuration
 	+ Try the same URL in browser e.g. ```http://127.0.0.1:8001/getData?source=customer&query=Name==%27John%27%26Credit_Limit%3E4000```
 	+ Response - ```{"2":{"Id":100002,"Name":"Allen","Account_Number":1608900127,"Credit_Card_Number":4544150000009750,"Credit_Limit":10000,"Credit_Balance":9500,"Customer_Profile":"High_Risk"},"3":{"Id":100002,"Name":"Allen","Account_Number":1608900128,"Credit_Card_Number":4544150000003971,"Credit_Limit":15000,"Credit_Balance":15000,"Customer_Profile":"High_Risk"}}```
 + You can get required data by changing your query in url parameter.
-
-Contact
--------
-helpdesk.hmilab@gmail.com

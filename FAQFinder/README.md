@@ -73,7 +73,3 @@ Configuration
     			},
     			"response": "ATM is cash withdrawl machine."
 			}```
-
-Contact
--------
-helpdesk.hmilab@gmail.com

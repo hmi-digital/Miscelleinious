@@ -61,6 +61,3 @@ Configuration
 	+ URL - ```http://localhost:<port>/classify?userUtterance=How is% weather```
 	+ Response - ```{"intent":"getWeatherInformation","score":"0.81","text":"How is weather"}```
 
-Contact
--------
-helpdesk.hmilab@gmail.com
